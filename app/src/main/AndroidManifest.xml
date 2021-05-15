@@ -7,6 +7,8 @@
         android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -27,7 +29,7 @@
             android:name=".core.StudentLoginActivity"
             android:label="学生登陆"
             android:launchMode="singleTask"
-            android:windowSoftInputMode="stateVisible|adjustResize">
+            android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
@@ -37,7 +39,7 @@
             android:name=".core.StudentRegisterActivity"
             android:label="学生注册"
             android:launchMode="singleTask"
-            android:windowSoftInputMode="stateVisible|adjustResize">
+            android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
@@ -47,7 +49,7 @@
             android:name=".core.TeacherLoginActivity"
             android:label="教师登陆"
             android:launchMode="singleTask"
-            android:windowSoftInputMode="stateVisible|adjustResize">
+            android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
@@ -57,7 +59,7 @@
             android:name=".core.TeacherRegisterActivity"
             android:label="教师注册"
             android:launchMode="singleTask"
-            android:windowSoftInputMode="stateVisible|adjustResize">
+            android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
@@ -67,7 +69,7 @@
             android:name=".core.StudentLandingActivity"
             android:label="学生主页"
             android:launchMode="singleTask"
-            android:windowSoftInputMode="stateVisible|adjustResize">
+            android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
@@ -76,8 +78,8 @@
         <activity
             android:name=".core.TeacherLandingActivity"
             android:label="教师主页"
-            android:launchMode="singleTask"
-            android:windowSoftInputMode="stateVisible|adjustResize">
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
@@ -85,6 +87,7 @@
         </activity>
 
         <service android:name=".service.CatchForegroundAppService" />
+        <service android:name=".service.GetStudentInfoService" />
     </application>
 
 </manifest>

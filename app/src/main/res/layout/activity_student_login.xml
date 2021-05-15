@@ -13,9 +13,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="学生姓名：" />
+            android:text="学生编号：" />
 
         <EditText
+            android:id="@+id/etStudentNo"
             android:layout_width="200dp"
             android:layout_height="wrap_content" />
     </TableRow>
@@ -30,6 +31,7 @@
             android:text="登陆密码：" />
 
         <EditText
+            android:id="@+id/etStudentPws"
             android:layout_width="200dp"
             android:layout_height="wrap_content" />
     </TableRow>
@@ -43,8 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
             android:background="@color/colorOrange"
-            android:text="注册"
             android:onClick="onStudentRegisterClicked"
+            android:text="注册"
             android:textColor="@color/colorWhite" />
 
         <Button

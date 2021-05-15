@@ -15,6 +15,7 @@
             android:text="教师姓名：" />
 
         <EditText
+            android:id="@+id/etTeacherName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="150dp" />
@@ -27,9 +28,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="教师年龄：" />
+            android:text="教师编号：" />
 
         <EditText
+            android:id="@+id/etTeacherNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="150dp" />
@@ -45,6 +47,7 @@
             android:text="登陆密码：" />
 
         <EditText
+            android:id="@+id/etTeacherPsw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="150dp" />

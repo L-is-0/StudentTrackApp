@@ -12,8 +12,6 @@ import android.util.Log;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.SortedMap;
-import java.util.TreeMap;
 
 public class ForegroundAppUtil {
     private static final long END_TIME = System.currentTimeMillis();

@@ -15,6 +15,7 @@
             android:text="学生姓名：" />
 
         <EditText
+            android:id="@+id/etStuName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="150dp" />
@@ -27,9 +28,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="学生年龄：" />
+            android:text="学生号码：" />
 
         <EditText
+            android:id="@+id/etStudentNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="150dp" />
@@ -45,6 +47,7 @@
             android:text="登陆密码：" />
 
         <EditText
+            android:id="@+id/etStudentPsw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="150dp" />
