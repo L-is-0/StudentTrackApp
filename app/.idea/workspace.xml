@@ -12,29 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b802101a-1c22-4c84-93c3-6b02a4cdf27c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_greenrobot_eventbus_3_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/StudentLandingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/StudentLandingActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/StudentLoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/StudentLoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/StudentRegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/StudentRegisterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/TeacherLandingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/TeacherLandingActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/TeacherLoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/TeacherLoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/TeacherRegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/core/TeacherRegisterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/net/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/net/Api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/service/CatchForegroundAppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/service/CatchForegroundAppService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/util/ForegroundAppUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studenttrackapp/util/ForegroundAppUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_student_landing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_student_landing.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_student_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_student_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_student_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_student_register.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_teacher_landing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_teacher_landing.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_teacher_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_teacher_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_teacher_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_teacher_register.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +41,15 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../../Key/OneKey.jks" />
+    <option name="KEY_ALIAS" value="OneKey" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -74,6 +62,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -173,62 +165,64 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="512" y="90" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621052760989" />
-    <state x="548" y="302" key="AndroidCreateResourceFileDialog" timestamp="1621052792427">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="1096" y="231" key="AndroidCreateResourceFileDialog" timestamp="1621112216676">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
+    <state x="1096" y="231" key="AndroidCreateResourceFileDialog/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621112216676" />
     <state x="548" y="302" key="AndroidCreateResourceFileDialog/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621052792427" />
-    <state width="1878" height="256" key="GridCell.Tab.0.bottom" timestamp="1621069325492">
+    <state width="1878" height="453" key="GridCell.Tab.0.bottom" timestamp="1621095472896">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="304" key="GridCell.Tab.0.bottom/-1440.-39.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1620940428697" />
     <state width="1878" height="259" key="GridCell.Tab.0.bottom/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621067281503" />
-    <state width="1878" height="256" key="GridCell.Tab.0.bottom/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621069325492" />
-    <state width="1878" height="256" key="GridCell.Tab.0.center" timestamp="1621069325491">
+    <state width="1878" height="453" key="GridCell.Tab.0.bottom/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621095472896" />
+    <state width="1878" height="453" key="GridCell.Tab.0.center" timestamp="1621095472895">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="304" key="GridCell.Tab.0.center/-1440.-39.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1620940428694" />
     <state width="1878" height="259" key="GridCell.Tab.0.center/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621067281502" />
-    <state width="1878" height="256" key="GridCell.Tab.0.center/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621069325491" />
-    <state width="1878" height="256" key="GridCell.Tab.0.left" timestamp="1621069325490">
+    <state width="1878" height="453" key="GridCell.Tab.0.center/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621095472895" />
+    <state width="1878" height="453" key="GridCell.Tab.0.left" timestamp="1621095472895">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="304" key="GridCell.Tab.0.left/-1440.-39.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1620940428690" />
     <state width="1878" height="259" key="GridCell.Tab.0.left/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621067281500" />
-    <state width="1878" height="256" key="GridCell.Tab.0.left/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621069325490" />
-    <state width="1878" height="256" key="GridCell.Tab.0.right" timestamp="1621069325492">
+    <state width="1878" height="453" key="GridCell.Tab.0.left/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621095472895" />
+    <state width="1878" height="453" key="GridCell.Tab.0.right" timestamp="1621095472896">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="304" key="GridCell.Tab.0.right/-1440.-39.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1620940428696" />
     <state width="1878" height="259" key="GridCell.Tab.0.right/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621067281502" />
-    <state width="1878" height="256" key="GridCell.Tab.0.right/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621069325492" />
-    <state width="1878" height="256" key="GridCell.Tab.1.bottom" timestamp="1621069325497">
+    <state width="1878" height="453" key="GridCell.Tab.0.right/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621095472896" />
+    <state width="1878" height="453" key="GridCell.Tab.1.bottom" timestamp="1621095470657">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="259" key="GridCell.Tab.1.bottom/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621067281507" />
-    <state width="1878" height="256" key="GridCell.Tab.1.bottom/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621069325497" />
-    <state width="1878" height="256" key="GridCell.Tab.1.center" timestamp="1621069325493">
+    <state width="1878" height="453" key="GridCell.Tab.1.bottom/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621095470657" />
+    <state width="1878" height="453" key="GridCell.Tab.1.center" timestamp="1621095470655">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="259" key="GridCell.Tab.1.center/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621067281505" />
-    <state width="1878" height="256" key="GridCell.Tab.1.center/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621069325493" />
-    <state width="1878" height="256" key="GridCell.Tab.1.left" timestamp="1621069325493">
+    <state width="1878" height="453" key="GridCell.Tab.1.center/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621095470655" />
+    <state width="1878" height="453" key="GridCell.Tab.1.left" timestamp="1621095470655">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="259" key="GridCell.Tab.1.left/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621067281505" />
-    <state width="1878" height="256" key="GridCell.Tab.1.left/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621069325493" />
-    <state width="1878" height="256" key="GridCell.Tab.1.right" timestamp="1621069325494">
+    <state width="1878" height="453" key="GridCell.Tab.1.left/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621095470655" />
+    <state width="1878" height="453" key="GridCell.Tab.1.right" timestamp="1621095470656">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="259" key="GridCell.Tab.1.right/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621067281506" />
-    <state width="1878" height="256" key="GridCell.Tab.1.right/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621069325494" />
+    <state width="1878" height="453" key="GridCell.Tab.1.right/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621095470656" />
     <state x="667" y="265" key="NewModule_or_Project.wizard" timestamp="1621004654453">
       <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="667" y="265" key="NewModule_or_Project.wizard/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621004654453" />
-    <state x="630" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1621004601163">
-      <screen x="0" y="23" width="1920" height="970" />
+    <state x="630" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1621088705983">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="630" y="340" key="com.intellij.ide.util.TipDialog/-1440.-39.1440.877/0.23.1920.970@0.23.1920.970" timestamp="1621004601163" />
+    <state x="630" y="353" key="com.intellij.ide.util.TipDialog/-1440.-62.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1621088705983" />
     <state x="612" y="297" width="695" height="486" key="find.popup" timestamp="1621065431218">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

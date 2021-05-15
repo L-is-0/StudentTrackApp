@@ -44,25 +44,37 @@ public class TeacherLoginActivity extends AppCompatActivity {
                     JSONObject object = new JSONObject(response);
                     if (object.has("code") && object.getInt("code") == 200) {
                         Toast.makeText(getApplicationContext(), "登陆成功", Toast.LENGTH_SHORT).show();
-                        if (object.has("data")) {
-                            JSONObject studentObject = object.getJSONObject("data");
-                            if (studentObject.has("data") && !studentObject.isNull("data")) {
-                                JSONObject mObject = studentObject.getJSONObject("data");
-                                String id = mObject.getString("id");
-                                String week = mObject.getString("week");
-                                String name = mObject.getString("name");
-                                String stuId = mObject.getString("stuId");
-                                String classroom = mObject.getString("classroom");
-                                String techId = mObject.getString("techId");
-                                String start1 = mObject.getString("start1");
-                                String start2 = mObject.getString("start2");
-                                String end1 = mObject.getString("end1");
-                                String end2 = mObject.getString("end2");
-                                storeTeacherInfo(id, week, name, stuId, classroom, techId, start1, start2, end1, end2);
-                                teacherLogin();
-                            } else {
-                                Toast.makeText(getApplicationContext(), "暂无绑定信息", Toast.LENGTH_SHORT).show();
-                            }
+                        if (object.has("data") && !object.isNull("data")) {
+                            JSONObject teacherObject = object.getJSONObject("data");
+                            String id = teacherObject.getString("id");
+                            String week = teacherObject.getString("week");
+                            String name = teacherObject.getString("name");
+                            String stuId = teacherObject.getString("stuId");
+                            String classroom = teacherObject.getString("classroom");
+                            String techId = teacherObject.getString("techId");
+                            String start1 = teacherObject.getString("start1");
+                            String start2 = teacherObject.getString("start2");
+                            String end1 = teacherObject.getString("end1");
+                            String end2 = teacherObject.getString("end2");
+                            storeTeacherInfo(id, week, name, stuId, classroom, techId, start1, start2, end1, end2);
+                            teacherLogin();
+//                            if (studentObject.has("data") && !studentObject.isNull("data")) {
+//                                JSONObject mObject = studentObject.getJSONObject("data");
+//                                String id = mObject.getString("id");
+//                                String week = mObject.getString("week");
+//                                String name = mObject.getString("name");
+//                                String stuId = mObject.getString("stuId");
+//                                String classroom = mObject.getString("classroom");
+//                                String techId = mObject.getString("techId");
+//                                String start1 = mObject.getString("start1");
+//                                String start2 = mObject.getString("start2");
+//                                String end1 = mObject.getString("end1");
+//                                String end2 = mObject.getString("end2");
+//                                storeTeacherInfo(id, week, name, stuId, classroom, techId, start1, start2, end1, end2);
+//                                teacherLogin();
+//                            } else {
+//                                Toast.makeText(getApplicationContext(), "暂无绑定信息", Toast.LENGTH_SHORT).show();
+//                            }
                         }
                     } else {
                         Toast.makeText(getApplicationContext(), "登陆失败", Toast.LENGTH_SHORT).show();

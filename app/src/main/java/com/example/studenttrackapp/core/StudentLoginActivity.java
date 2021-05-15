@@ -43,25 +43,37 @@ public class StudentLoginActivity extends AppCompatActivity {
                     JSONObject object = new JSONObject(response);
                     if (object.has("code") && object.getInt("code") == 200) {
                         Toast.makeText(getApplicationContext(), "登陆成功", Toast.LENGTH_SHORT).show();
-                        if (object.has("data")) {
+                        if (object.has("data") && !object.isNull("data")) {
                             JSONObject studentObject = object.getJSONObject("data");
-                            if (studentObject.has("data") && !studentObject.isNull("data")) {
-                                JSONObject mObject = studentObject.getJSONObject("data");
-                                String id = mObject.getString("id");
-                                String week = mObject.getString("week");
-                                String name = mObject.getString("name");
-                                String stuId = mObject.getString("stuId");
-                                String classroom = mObject.getString("classroom");
-                                String techId = mObject.getString("techId");
-                                String start1 = mObject.getString("start1");
-                                String start2 = mObject.getString("start2");
-                                String end1 = mObject.getString("end1");
-                                String end2 = mObject.getString("end2");
-                                storeStudentInfo(id, week, name, stuId, classroom, techId, start1, start2, end1, end2);
-                                studentLogin();
-                            } else {
-                                Toast.makeText(getApplicationContext(), "暂无绑定信息", Toast.LENGTH_SHORT).show();
-                            }
+                            String id = studentObject.getString("id");
+                            String week = studentObject.getString("week");
+                            String name = studentObject.getString("name");
+                            String stuId = studentObject.getString("stuId");
+                            String classroom = studentObject.getString("classroom");
+                            String techId = studentObject.getString("techId");
+                            String start1 = studentObject.getString("start1");
+                            String start2 = studentObject.getString("start2");
+                            String end1 = studentObject.getString("end1");
+                            String end2 = studentObject.getString("end2");
+                            storeStudentInfo(id, week, name, stuId, classroom, techId, start1, start2, end1, end2);
+                            studentLogin();
+//                            if (studentObject.has("data") && !studentObject.isNull("data")) {
+//                                JSONObject mObject = studentObject.getJSONObject("data");
+//                                String id = mObject.getString("id");
+//                                String week = mObject.getString("week");
+//                                String name = mObject.getString("name");
+//                                String stuId = mObject.getString("stuId");
+//                                String classroom = mObject.getString("classroom");
+//                                String techId = mObject.getString("techId");
+//                                String start1 = mObject.getString("start1");
+//                                String start2 = mObject.getString("start2");
+//                                String end1 = mObject.getString("end1");
+//                                String end2 = mObject.getString("end2");
+//                                storeStudentInfo(id, week, name, stuId, classroom, techId, start1, start2, end1, end2);
+//                                studentLogin();
+//                            } else {
+//                                Toast.makeText(getApplicationContext(), "暂无绑定信息", Toast.LENGTH_SHORT).show();
+//                            }
                         }
                     } else {
                         Toast.makeText(getApplicationContext(), "登陆失败", Toast.LENGTH_SHORT).show();
@@ -109,8 +121,8 @@ public class StudentLoginActivity extends AppCompatActivity {
         finish();
     }
 
-    public static String getMacAddress(){
-        String macAddress ="";
+    public static String getMacAddress() {
+        String macAddress = "";
         try {
             List<NetworkInterface> all = Collections.list(NetworkInterface.getNetworkInterfaces());
             for (NetworkInterface nif : all) {
