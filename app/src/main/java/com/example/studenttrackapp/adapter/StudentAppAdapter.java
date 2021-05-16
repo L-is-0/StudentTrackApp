@@ -37,7 +37,6 @@ public class StudentAppAdapter extends RecyclerView.Adapter<StudentAppAdapter.St
         holder.tvAppId.setText(mStudentAppInfo.get(position).getId());
         holder.tvAppName.setText(mStudentAppInfo.get(position).getAppName());
         holder.tvCreatedTime.setText(mStudentAppInfo.get(position).getCreateTime());
-        holder.tvWeeK.setText(mStudentAppInfo.get(position).getWeek());
         holder.tvCourseName.setText(mStudentAppInfo.get(position).getCourseName());
         holder.tvStuId.setText(mStudentAppInfo.get(position).getStuId());
         holder.tvTechId.setText(mStudentAppInfo.get(position).getTechId());
@@ -50,14 +49,13 @@ public class StudentAppAdapter extends RecyclerView.Adapter<StudentAppAdapter.St
     }
 
     public static class StudentAppViewHolder extends RecyclerView.ViewHolder {
-        TextView tvAppId, tvAppName, tvCreatedTime, tvCourseName, tvWeeK, tvStuId, tvTechId;
+        TextView tvAppId, tvAppName, tvCreatedTime, tvCourseName, tvStuId, tvTechId;
 
         public StudentAppViewHolder(@NonNull View itemView) {
             super(itemView);
             tvAppId = itemView.findViewById(R.id.tvStudentAppId);
             tvAppName = itemView.findViewById(R.id.tvAppName);
             tvCreatedTime = itemView.findViewById(R.id.tvCreateTime);
-            tvWeeK = itemView.findViewById(R.id.tvWeek);
             tvCourseName = itemView.findViewById(R.id.tvCourseName);
             tvStuId = itemView.findViewById(R.id.tvStuId);
             tvTechId = itemView.findViewById(R.id.tvTeachId);

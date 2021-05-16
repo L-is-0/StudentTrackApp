@@ -61,8 +61,8 @@ public class Api {
         ApiManager.getInstance().postWithAuthorisation(url, json, getRequestCallback(apiEndpoint, callback));
     }
 
-    public void getStudentInfo(String techID, ApiCallback callback) {
-        String apiEndpoint = "record/get?techID=" + techID;
+    public void getStudentInfo(String techID, String courseId, ApiCallback callback) {
+        String apiEndpoint = "record/get?techID=" + techID + "&courseId=" + courseId;
         String url = baseUrl + "/" + apiEndpoint;
         String json = "";
 

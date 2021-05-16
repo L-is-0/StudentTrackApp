@@ -6,16 +6,14 @@ public class StudentAppInfo {
     String createTime;
     String stuId;
     String techId;
-    String week;
     String courseName;
 
-    public StudentAppInfo(String id, String appName, String createTime, String stuId, String techId, String week, String courseName) {
+    public StudentAppInfo(String id, String appName, String createTime, String stuId, String techId, String courseName) {
         this.id = id;
         this.appName = appName;
         this.createTime = createTime;
         this.stuId = stuId;
         this.techId = techId;
-        this.week = week;
         this.courseName = courseName;
     }
 
@@ -59,13 +57,6 @@ public class StudentAppInfo {
         this.techId = techId;
     }
 
-    public String getWeek() {
-        return week;
-    }
-
-    public void setWeek(String week) {
-        this.week = week;
-    }
 
     public String getCourseName() {
         return courseName;

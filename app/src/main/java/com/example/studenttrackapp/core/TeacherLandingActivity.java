@@ -105,20 +105,20 @@ public class TeacherLandingActivity extends AppCompatActivity {
     }
 
     private void getStudentInfo() {
-        Api.getInstance().getStudentInfo(techId, new ApiCallback() {
+        Api.getInstance().getStudentInfo(techId, id, new ApiCallback() {
             @Override
             public void getJsonArray(String response) throws JSONException {
                 if (response != null) {
                     JSONObject object = new JSONObject(response);
                     if (object.has("code") && object.getInt("code") == 200) {
                         Toast.makeText(getApplicationContext(), "获取学生信息成功", Toast.LENGTH_SHORT).show();
-                        if (object.has("data")) {
+                        if (object.has("data") && !object.isNull("data")) {
                             JSONArray array = object.getJSONArray("data");
                             studentAppInfos = new ArrayList<>();
                             JSONObject studentObject;
                             for (int i = 0; i < array.length(); i++) {
                                 studentObject = array.getJSONObject(i);
-                                studentAppInfos.add(new StudentAppInfo(studentObject.getString("id"), studentObject.getString("appName"), studentObject.getString("createTime"), studentObject.getString("stuId"), studentObject.getString("techId"), studentObject.getString("week"), studentObject.getString("courseName")));
+                                studentAppInfos.add(new StudentAppInfo(studentObject.getString("id"), studentObject.getString("appName"), studentObject.getString("createTime"), studentObject.getString("stuId"), studentObject.getString("techId"), studentObject.getString("courseName")));
                             }
 
                             if (studentAppInfos.size() > 0) {
