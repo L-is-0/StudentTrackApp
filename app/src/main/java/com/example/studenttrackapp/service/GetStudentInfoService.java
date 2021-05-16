@@ -61,9 +61,9 @@ public class GetStudentInfoService extends Service {
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
             if (TEST_ACTION.equals(action)) {
-                Log.d(TAG, "calling endpoint");
                 //TODO: call api endpoint and refresh TeacherLandingActivity();
                 Intent mIntent = new Intent(getApplicationContext(), TeacherLandingActivity.class);
+                mIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(mIntent);
 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

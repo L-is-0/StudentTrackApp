@@ -39,6 +39,7 @@ public class CatchForegroundAppService extends Service {
         @Override
         public void run() {
             String foregroundActivityName = ForegroundAppUtil.getForegroundActivityName(getApplicationContext());
+            Log.d(TAG, "app name is " + foregroundActivityName);
             if (!foregroundActivityName.equals("com.example.studenttrackapp") && isWithinAllowedTime) {
                 sendAppRecord(foregroundActivityName);
             }

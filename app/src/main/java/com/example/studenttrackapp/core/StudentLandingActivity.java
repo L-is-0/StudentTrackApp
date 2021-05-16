@@ -28,11 +28,8 @@ public class StudentLandingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_student_landing);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-        tvCourseId = findViewById(R.id.tvCourseId);
         tvCourseName = findViewById(R.id.tvCourseName);
         tvClassRoom = findViewById(R.id.tvClassRoom);
-        tvStudentId = findViewById(R.id.tvStuId);
-        tvTeacherId = findViewById(R.id.tvTeachId);
         tvStart1 = findViewById(R.id.tvStart1);
         tvStart2 = findViewById(R.id.tvStart2);
         tvEnd1 = findViewById(R.id.tvEnd1);
@@ -56,11 +53,8 @@ public class StudentLandingActivity extends AppCompatActivity {
         end1 = studentInfo.getString("end1", null);
         end2 = studentInfo.getString("end2", null);
 
-        tvCourseId.setText(id);
         tvCourseName.setText(name);
         tvClassRoom.setText(classroom);
-        tvStudentId.setText(stuId);
-        tvTeacherId.setText(techId);
         tvStart1.setText(start1);
         tvStart2.setText(start2);
         tvEnd1.setText(end1);

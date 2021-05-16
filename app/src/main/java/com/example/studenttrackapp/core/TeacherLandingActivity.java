@@ -43,30 +43,35 @@ public class TeacherLandingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onStart");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_landing);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         rvStudentApp = findViewById(R.id.rvStudentAppList);
 
-        tvCourseId = findViewById(R.id.tvCourseId);
         tvCourseName = findViewById(R.id.tvCourseName);
         tvClassRoom = findViewById(R.id.tvClassRoom);
-        tvStudentId = findViewById(R.id.tvStuId);
-        tvTeacherId = findViewById(R.id.tvTeachId);
         tvStart1 = findViewById(R.id.tvStart1);
         tvStart2 = findViewById(R.id.tvStart2);
         tvEnd1 = findViewById(R.id.tvEnd1);
         tvEnd2 = findViewById(R.id.tvEnd2);
 
         getTeacherLoginData();
-        getStudentInfo();
         startService(new Intent(getApplicationContext(), GetStudentInfoService.class));
     }
 
     @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
+    protected void onResume() {
+        Log.d(TAG, "onResume");
+        super.onResume();
         getStudentInfo();
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        Log.d(TAG, "onNewIntent");
+        super.onNewIntent(intent);
+        setIntent(intent);
     }
 
     @Override
@@ -93,11 +98,8 @@ public class TeacherLandingActivity extends AppCompatActivity {
         end1 = teacherInfo.getString("end1", null);
         end2 = teacherInfo.getString("end2", null);
 
-        tvCourseId.setText(id);
         tvCourseName.setText(name);
         tvClassRoom.setText(classroom);
-        tvStudentId.setText(stuId);
-        tvTeacherId.setText(techId);
         tvStart1.setText(start1);
         tvStart2.setText(start2);
         tvEnd1.setText(end1);
@@ -105,6 +107,7 @@ public class TeacherLandingActivity extends AppCompatActivity {
     }
 
     private void getStudentInfo() {
+        Log.d(TAG, "calling endpoint");
         Api.getInstance().getStudentInfo(techId, id, new ApiCallback() {
             @Override
             public void getJsonArray(String response) throws JSONException {
